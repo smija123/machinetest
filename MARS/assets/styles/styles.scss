@@ -16,3 +16,40 @@ header{
         }
     }
 }
+//home
+section#home{
+    height: 100vh;
+    div.home{
+    background-color: #111015;
+    background: url(../images/background-img.jpg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 600px;
+        
+    }
+    div.user-home{
+        height: 400px;
+    }
+}
+//form
+.form-div{
+    margin: 0 auto;
+
+}
+//footer
+footer{
+    a{
+        img.footer-img{
+            width: 144px;
+            height: 54px;
+        }
+    }
+}
+footer {
+    background-color: $text-color;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    color: #ffffff;
+}

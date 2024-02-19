@@ -14,21 +14,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-         <!-- add icon link -->
+    <!-- add icon link -->
     <link rel="icon" href="C:/Users/Smija/Desktop/MARS/assets/images/product2.png" type="image/x-icon">
     <title>User Registration</title>
 </head>
+
 <body>
     <!-- Header -->
     <header>
         <div class="navbar-head">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="./index.html"><img
-                        class="navbar-img img-fluid"
-                        src="C:/Users/Smija/Desktop/MARS/assets/images/product2.png"
-                        alt="logo image"
-                      /></a>
+                    <a class="navbar-brand" href="./index.html"><img class="navbar-img img-fluid"
+                            src="C:/Users/Smija/Desktop/MARS/assets/images/product2.png" alt="logo image" /></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -94,7 +92,8 @@
                                     User Management
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="./User-Registration.html">User Registration</a></li>
+                                    <li><a class="dropdown-item" href="./User-Registration.html">User Registration</a>
+                                    </li>
                                     <li><a class="dropdown-item" href="#">User Activity Tracking</a></li>
                                 </ul>
                             </li>
@@ -108,7 +107,148 @@
             </nav>
         </div>
     </header>
+    <section id="home">
+        <div class="home user-home">
+        </div>
+    </section>
+    <!-- Form for User Registration -->
+    <div class="container">
+        <div class="row">
+            <div
+                class="form-div col-xs-12 col-sm-12 col-md-8 col-lg-6  column col-sm-offset-0 col-md-offset-2 col-lg-offset-3">
+                <form class="form-horizontal">
+                    <fieldset>
+                        <div><a href="#List">View User List</a></div>
+                        <!-- Form Name -->
+                        <legend>User Registration</legend>
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="textinput">User Name</label>
+                            <div class="col-md-3">
+                                <input id="textinput" name="textinput" type="text" placeholder="Name"
+                                    class="form-control input-md">
+                            </div>
+                            <label class="col-md-3 control-label" for="textinput">User ID</label>
+                            <div class="col-md-3">
+                                <input id="textinput" name="textinput" type="text" placeholder="User ID"
+                                    class="form-control input-md">
+                            </div>
+                        </div>
+                        <!-- Textarea -->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="textarea">Address</label>
+                            <div class="col-md-9">
+                                <textarea class="form-control" id="textarea" name="textarea">default text</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="textinput">Phone</label>
+                            <div class="col-md-3">
+                                <input id="textinput" name="textinput" type="text" placeholder="Phone"
+                                    class="form-control input-md">
+                            </div>
+                        </div>
+                        <div class="form-group">
 
+                            <!-- Multiple Radios (inline) -->
+
+                            <label class="col-md-3 control-label" for="radios">User Role</label>
+                            <div class="col-md-3">
+                                <label class="radio-inline" for="radios-0">
+                                    <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+                                    Admin
+                                </label>
+                                <label class="radio-inline" for="radios-1">
+                                    <input type="radio" name="radios" id="radios-1" value="2">
+                                    Normal
+                                </label>
+                                <label class="radio-inline" for="radios-2">
+                                    <input type="radio" name="radios" id="radios-2" value="3">
+                                    User
+                                </label>
+                            </div>
+                        </div>
+                        <!-- User Type -->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="selectbasic">User Type</label>
+                            <div class="col-md-9">
+                                <select id="selectbasic" name="selectbasic" class="form-control">
+                                    <option value="1">Marker</option>
+                                    <option value="2">Checker</option>
+                                    <option value="3">Approver</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- User Group -->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="selectbasic">User Group</label>
+                            <div class="col-md-9">
+                                <select id="selectbasic" name="selectbasic" class="form-control">
+                                    <option value="1">Group 1</option>
+                                    <option value="2">Group 2</option>
+                                    <option value="3">Group 3</option>
+                                    <option value="4">Group 4</option>
+                                </select>
+                            </div>
+                        </div> <!-- User Type -->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="selectbasic">Enable DFA</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="col-md-3 control-label form-check-label" for="flexCheckDefault">
+                                    Yes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="col-md-3 control-label form-check-label" for="flexCheckChecked">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="exampleInputEmail1">Email address</label>
+                            <div class="col-md-3">
+                                <input id="exampleInputEmail1" name="email" type="email" placeholder="Email"
+                                    aria-describedby="emailHelp" class="form-control input-md">
+                            </div>
+                        </div>
+
+                        <!-- Button (Double) -->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="button1id"></label>
+                            <div class="col-md-8">
+                                <button id="button1id" name="button1id" class="btn btn-success">Save</button>
+                                <button id="button2id" name="button2id" class="btn btn-danger">Edit</button>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+    <section>
+        <div class="container">
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <!--    Copyright-->
+        <div class="copyright py-3">
+            <div class="mx-2 mx-lg-0">
+                <a href="http://www.empaysoft.com/"><img class="footer-img img-fluid"
+                        src="C:/Users/Smija/Desktop/MARS/assets/images/Empay Logo.jpg" alt="logo image" /></a>
+            </div>
+            <div>Copyright © 2020 All Rights Reserved</div>
+        </div>
+    </footer>
     <!--bootstrap script-->
     <script src="./assets/scripts/bootstrap.bundle.min.js"></script>
     <!--Jquery-->
