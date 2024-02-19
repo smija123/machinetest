@@ -1,0 +1,18 @@
+@import "variable.scss";
+@import "global.scss";
+@import "mixins.scss";
+
+
+// header
+header{
+    .navbar-head{
+        nav{
+            a{
+                img.navbar-img{
+                    width: 144px;
+                    height: 54px;
+                }
+            }
+        }
+    }
+}

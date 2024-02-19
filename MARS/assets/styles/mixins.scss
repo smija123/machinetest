@@ -1,0 +1,17 @@
+@function px-to-rem($pxValue, $baseFontSize: 16px) {
+    @return $pxValue / $baseFontSize * 1rem;
+  }
+  @mixin rem($size, $baseFontSize: 16px, $breakpoints: (
+    small: 576px,
+    medium: 768px,
+    large: 992px,
+    x-large: 1200px
+  )) {
+    font-size: px-to-rem($size, $baseFontSize);
+  
+    @each $breakpoint, $width in $breakpoints {
+      @media (min-width: $width) {
+        font-size: px-to-rem($size, $baseFontSize);
+      }
+    }
+  }

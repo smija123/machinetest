@@ -1,0 +1,61 @@
+/* Reset some default styles to ensure consistency across browsers */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: normal;
+  color: #000000;
+}
+
+@media (min-width: 576px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+/* Reset some default styles to ensure consistency across browsers */
+header .navbar-head nav a img.navbar-img {
+  width: 144px;
+  height: 54px;
+}
+/*# sourceMappingURL=styles.css.map */
