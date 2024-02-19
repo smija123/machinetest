@@ -118,7 +118,7 @@
                 class="form-div col-xs-12 col-sm-12 col-md-8 col-lg-6  column col-sm-offset-0 col-md-offset-2 col-lg-offset-3">
                 <form class="form-horizontal">
                     <fieldset>
-                        <div><a href="#List">View User List</a></div>
+                        <div><a href="#list">View User List</a></div>
                         <!-- Form Name -->
                         <legend>User Registration</legend>
                         <!-- Text input-->
@@ -232,9 +232,37 @@
     </div>
 
 
-    <section>
-        <div class="container">
-
+    <section id="list">
+        <div class="container table-responsive">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">User Name</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">User Type</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>1</td>
+                    <td>checker</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>1</td>
+                    <td>Approver</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>Marker</td>
+                  </tr>
+                </tbody>
+              </table>
         </div>
     </section>
 
